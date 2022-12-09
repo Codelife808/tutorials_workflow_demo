@@ -12,6 +12,7 @@ def another_tutorial(db):
     )
     return tutorial"""
 
+
 def test_compare_tutorials(new_tutorial, another_tutorial):
     assert new_tutorial.pk != another_tutorial.pk 
     
@@ -19,7 +20,7 @@ def test_compare_tutorials(new_tutorial, another_tutorial):
 def test_user(db, django_user_model):
     django_user_model.objects.create_user(
         username="test_username", password="test_password")
-    return "test_username", "test_password"   # this returns a tuple #Jarvis you added this last and commited documented in case it cause any error
+    return "test_username", "test_password"   
 
 
 def test_login_user(client, test_user):
