@@ -10,10 +10,10 @@ def another_tutorial(db):
         description='Tutorial on how to apply pytest to a Django application',
         published=True
     )
-    return tutorial
+    return tutorial"""
 
 def test_compare_tutorials(new_tutorial, another_tutorial):
-    assert new_tutorial.pk != another_tutorial.pk """
+    assert new_tutorial.pk != another_tutorial.pk 
     
 @pytest.fixture
 def test_user(db, django_user_model):
