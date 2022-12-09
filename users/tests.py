@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.urls import reverse
 import pytest
 
-@pytest.fixture
+"""@pytest.fixture
 def another_tutorial(db):
     tutorial = Tutorial.objects.create(
         title='More-Pytest',
@@ -13,7 +13,7 @@ def another_tutorial(db):
     return tutorial
 
 def test_compare_tutorials(new_tutorial, another_tutorial):
-    assert new_tutorial.pk != another_tutorial.pk
+    assert new_tutorial.pk != another_tutorial.pk """
     
 @pytest.fixture
 def test_user(db, django_user_model):
