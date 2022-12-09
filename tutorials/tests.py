@@ -8,7 +8,7 @@ def test_homepage_access():
     url = reverse('home')
     assert url == "/"
 
-"""@pytest.mark.django_db
+@pytest.mark.django_db
 def test_create_tutorial():
     tutorial = Tutorial.objects.create(
         title='Pytest',
@@ -16,7 +16,7 @@ def test_create_tutorial():
         description='Tutorial on how to apply pytest to a Django application',
         published=True
     )
-    assert tutorial.title == "Pytest" """
+    assert tutorial.title == "Pytest"
 
 @pytest.fixture
 def new_tutorial(db):
