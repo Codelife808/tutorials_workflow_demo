@@ -7,7 +7,11 @@ import pytest
 def test_user(db, django_user_model):
     django_user_model.objects.create_user(
         username="test_username", password="test_password")
-    return "test_username", "test_password"   
+    return "test_username", "test_password" 
+
+
+def test_compare_tutorials(new_tutorial, another_tutorial):
+    assert new_tutorial.pk != another_tutorial.pk #just a try out jarvis
 
 
 def test_login_user(client, test_user):
